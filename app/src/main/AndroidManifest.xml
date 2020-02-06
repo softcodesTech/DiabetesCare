@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.diabetescare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/diabetesicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/diabetesicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DoctorChat"></activity>
+        <activity android:name=".CallDoctor"
+            android:parentActivityName=".MeetDoctor"
+            android:label="Call Center"/>
+        <activity android:name=".MeetDoctor"
+            android:label="Meet Your cardiologist"
+            android:parentActivityName=".FindDoctor"/>
+        <activity android:name=".DoctorAppointmentLetter"
+            android:parentActivityName=".MeetDoctor"
+            android:label="Appointment"/>
+        <activity android:name=".FindDoctor"
+            android:parentActivityName=".PatientCenter"/>
+        <activity android:name=".PatientCenter" />
+        <activity android:name=".DCACreateAccount"
+            android:parentActivityName=".DCALogin"
+            android:label="Register"/>
+        <activity android:name=".DCALogin" />
+        <activity
+            android:name=".DCAWelcome"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

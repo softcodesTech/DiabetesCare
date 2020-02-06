@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CallDoctor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Telphone No:"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="0773652621"
+            android:visibility="visible"
+            android:editable="false"
+            android:enabled="false"
+            android:gravity="center"
+            android:layout_marginLeft="45dp"
+            android:inputType="none"
+            android:ems="15" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/calldoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#0a5d00"
+        android:textColor="#fff"
+        android:layout_marginTop="80dp"
+        android:text="Call" />
+</LinearLayout>
