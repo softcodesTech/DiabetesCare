@@ -18,4 +18,9 @@ public class DCALogin extends AppCompatActivity {
         Intent dsp = new Intent(DCALogin.this,DCACreateAccount.class);
         startActivity(dsp);
     }
+
+    public void loginn(View view) {
+        Intent dsp = new Intent(DCALogin.this,Dr.class);
+        startActivity(dsp);
+    }
 }

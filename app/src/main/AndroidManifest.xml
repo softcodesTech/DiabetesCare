@@ -13,22 +13,28 @@
         android:roundIcon="@drawable/diabetesicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DoctorChat"></activity>
-        <activity android:name=".CallDoctor"
-            android:parentActivityName=".MeetDoctor"
-            android:label="Call Center"/>
-        <activity android:name=".MeetDoctor"
+        <activity android:name=".Dr"></activity>
+        <activity android:name=".DoctorChat" />
+        <activity
+            android:name=".CallDoctor"
+            android:label="Call Center"
+            android:parentActivityName=".MeetDoctor" />
+        <activity
+            android:name=".MeetDoctor"
             android:label="Meet Your cardiologist"
-            android:parentActivityName=".FindDoctor"/>
-        <activity android:name=".DoctorAppointmentLetter"
-            android:parentActivityName=".MeetDoctor"
-            android:label="Appointment"/>
-        <activity android:name=".FindDoctor"
-            android:parentActivityName=".PatientCenter"/>
+            android:parentActivityName=".FindDoctor" />
+        <activity
+            android:name=".DoctorAppointmentLetter"
+            android:label="Appointment"
+            android:parentActivityName=".MeetDoctor" />
+        <activity
+            android:name=".FindDoctor"
+            android:parentActivityName=".PatientCenter" />
         <activity android:name=".PatientCenter" />
-        <activity android:name=".DCACreateAccount"
-            android:parentActivityName=".DCALogin"
-            android:label="Register"/>
+        <activity
+            android:name=".DCACreateAccount"
+            android:label="Register"
+            android:parentActivityName=".DCALogin" />
         <activity android:name=".DCALogin" />
         <activity
             android:name=".DCAWelcome"

@@ -8,55 +8,7 @@
     android:gravity="center"
     tools:context=".DCACreateAccount">
 
-<!--    <TextView-->
-<!--        android:id="@+id/account"-->
-<!--        android:layout_width="168dp"-->
-<!--        android:layout_height="35dp"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginLeft="8dp"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        android:layout_marginRight="8dp"-->
-<!--        android:layout_marginBottom="8dp"-->
-<!--        android:text="Select account type"-->
-<!--        android:textColor="@android:color/holo_blue_light"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.436"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.011" />-->
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="horizontal">-->
-<!--        <RadioGroup-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="8dp"-->
-<!--            android:layout_marginLeft="8dp"-->
-<!--            android:layout_marginTop="8dp"-->
-<!--            android:layout_marginEnd="8dp"-->
-<!--            android:layout_marginRight="8dp"-->
-<!--            android:layout_marginBottom="8dp">-->
-<!--            <RadioButton-->
-<!--                android:id="@+id/selecteddoctor"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Doctor"-->
-<!--                android:layout_marginLeft="68dp"-->
-<!--                android:textSize="20sp"/>-->
 
-<!--            <RadioButton-->
-<!--                android:id="@+id/selectedpatient"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginTop="-30dp"-->
-<!--                android:layout_marginLeft="200dp"-->
-<!--                android:text="Patient"-->
-<!--                android:textSize="20sp" />-->
-<!--        </RadioGroup>-->
-<!--    </LinearLayout>-->
 
     <EditText
         android:id="@+id/editText"
@@ -195,7 +147,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/holo_green_dark"
+        android:background="@color/colorPrimary"
         android:text="Create Account"
         android:onClick="createdacc"
         android:textColor="@android:color/white"

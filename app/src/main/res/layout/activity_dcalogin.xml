@@ -85,6 +85,7 @@
         android:layout_marginBottom="8dp"
         android:background="@android:color/holo_blue_bright"
         android:text="Login"
+        android:onClick="loginn"
         android:textColor="@android:color/black"
         android:textColorHighlight="@android:color/holo_blue_bright"
         app:layout_constraintBottom_toBottomOf="parent"
