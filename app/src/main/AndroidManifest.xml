@@ -13,7 +13,9 @@
         android:roundIcon="@drawable/diabetesicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Dr"></activity>
+        <activity android:name=".EnterSugarLevels"></activity>
+        <activity android:name=".DietPlan" />
+        <activity android:name=".Dr" />
         <activity android:name=".DoctorChat" />
         <activity
             android:name=".CallDoctor"

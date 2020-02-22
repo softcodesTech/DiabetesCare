@@ -1,5 +1,6 @@
 package com.example.diabetescare;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -17,8 +18,10 @@ public class PatientCenter extends AppCompatActivity  implements View.OnClickLis
         setContentView(R.layout.tiredcard);
 
         View card1 = findViewById(R.id.card1);
+        View card2 = findViewById(R.id.bloodlevels);
 
         card1.setOnClickListener(this);
+        card2.setOnClickListener(this);
 
 
     }
@@ -33,7 +36,15 @@ public class PatientCenter extends AppCompatActivity  implements View.OnClickLis
                 startActivity(intent);
 
                 break;
+            case R.id.bloodlevels:
+                Intent sugar = new Intent(PatientCenter.this, EnterSugarLevels.class);
+                startActivity(sugar);
 
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
     }
 }
