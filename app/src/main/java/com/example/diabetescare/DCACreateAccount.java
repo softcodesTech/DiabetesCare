@@ -1,13 +1,13 @@
 package com.example.diabetescare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DCACreateAccount extends AppCompatActivity {
     EditText editTextfName,editTextPassword,editTextSname, editTextEmail,editTextPhone,editTextUsername,editTextconfirmpassword;
@@ -23,14 +23,14 @@ public class DCACreateAccount extends AppCompatActivity {
         loginDataBaseAdapter=loginDataBaseAdapter.open();
 
 // Get Refferences of Views
-        editTextfName=(EditText)findViewById(R.id.fname);
-        editTextSname=(EditText)findViewById(R.id.sname);
-        editTextEmail=(EditText)findViewById(R.id.email);
-        editTextPhone=(EditText)findViewById(R.id.phone);
-        editTextPassword=(EditText)findViewById(R.id.password);
-        editTextconfirmpassword=(EditText)findViewById(R.id.confirmpassword);
-        editTextUsername =(EditText)findViewById(R.id.username);
-        btnCreateAccount=(Button)findViewById(R.id.account_creation);
+        editTextfName = findViewById(R.id.fname);
+        editTextSname = findViewById(R.id.sname);
+        editTextEmail = findViewById(R.id.email);
+        editTextPhone = findViewById(R.id.phone);
+        editTextPassword = findViewById(R.id.password);
+        editTextconfirmpassword = findViewById(R.id.confirmpassword);
+        editTextUsername = findViewById(R.id.username);
+        btnCreateAccount = findViewById(R.id.account_creation);
         btnCreateAccount.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -53,13 +53,13 @@ public class DCACreateAccount extends AppCompatActivity {
                 if(!password.equals(confirmPassword))
                 {
                     Toast.makeText(getApplicationContext(), "Password does not match", Toast.LENGTH_LONG).show();
-                    return;
+                    editTextconfirmpassword.requestFocus();
                 }
                 else
                 {
 // Save the Data in Database
                     loginDataBaseAdapter.insertEntry(firstName,SName,Email,Phone,userName, password);
-                    Toast.makeText(getApplicationContext(), "Account Successfully Created ", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Settings Successfully Created ", Toast.LENGTH_LONG).show();
                     editTextfName.setText("");
                     editTextSname.setText("");
                     editTextEmail.setText("");

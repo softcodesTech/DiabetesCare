@@ -17,6 +17,11 @@
         <activity android:name=".DietPlan" />
         <activity android:name=".Dr" />
         <activity android:name=".DoctorChat" />
+        <activity android:name=".Admin.AddDietPlan" />
+        <activity android:name=".Admin.EditProfile" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:theme="@style/AppTheme3" />
         <activity
             android:name=".CallDoctor"
             android:label="Call Center"

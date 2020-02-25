@@ -22,24 +22,17 @@
             android:id="@+id/editText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:text="0773652621"
-            android:visibility="visible"
-            android:editable="false"
-            android:enabled="false"
+            android:layout_marginStart="45dp"
             android:gravity="center"
-            android:layout_marginLeft="45dp"
+            android:ems="10"
             android:inputType="none"
-            android:ems="15" />
+            android:hint="0773652621" />
     </LinearLayout>
     <Button
         android:id="@+id/calldoctor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:background="#0a5d00"
+        android:background="@color/colorPrimary"
         android:textColor="#fff"
         android:layout_marginTop="80dp"
         android:text="Call" />

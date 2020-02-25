@@ -1,122 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".DoctorAppointmentLetter">
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_marginStart="15dp"-->
+    <!--        android:orientation="horizontal">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:text="Name *"-->
+    <!--            android:textSize="20sp">-->
+    <!--        </TextView>-->
+    <!--        <EditText-->
+    <!--            android:layout_width="260dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:layout_marginStart="35dp"-->
+    <!--            android:inputType="text"-->
+    <!--            android:enabled="false"-->
+    <!--            android:editable="false"-->
+    <!--            android:layout_marginTop="-15dp">-->
+
+    <!--        </EditText>-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginStart="15dp"-->
+    <!--        android:layout_marginTop="8dp">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="160dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:text="Email *"-->
+    <!--            android:textSize="20sp"-->
+    <!--            />-->
+    <!--        <EditText-->
+    <!--            android:layout_width="260dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_marginStart="0dp"-->
+    <!--            android:editable="false"-->
+    <!--            android:enabled="false"-->
+    <!--            android:inputType="text"-->
+    <!--            android:layout_marginTop="-15dp">-->
+
+    <!--        </EditText>-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginStart="15dp"-->
+    <!--        android:layout_marginTop="8dp">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="160dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:text="Phone Number *"-->
+    <!--            android:textSize="20sp"-->
+    <!--            />-->
+    <!--        <EditText-->
+    <!--            android:layout_width="260dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_marginStart="15dp"-->
+    <!--            android:enabled="false"-->
+    <!--            android:inputType="text"-->
+    <!--            android:layout_marginTop="-15dp">-->
+
+    <!--        </EditText>-->
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_marginStart="15dp"-->
+    <!--        android:layout_marginTop="8dp">-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:text="Best Time To call You *"-->
+    <!--            android:layout_marginStart="3dp"-->
+    <!--            android:textSize="20sp"-->
+    <!--            />-->
+    <!--        <RadioGroup-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            >-->
+    <!--            <RadioButton-->
+    <!--                android:id="@+id/morningtime"-->
+    <!--                android:layout_width="160dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Morining"-->
+    <!--                android:textSize="20sp">-->
+    <!--            </RadioButton>-->
+    <!--            <RadioButton-->
+    <!--                android:layout_width="160dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Afternoon"-->
+    <!--                android:layout_marginTop="15dp"-->
+    <!--                android:id="@+id/afternoon"-->
+    <!--                android:textSize="20sp">-->
+    <!--            </RadioButton>-->
+    <!--            <RadioButton-->
+    <!--                android:layout_width="260dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Evening"-->
+    <!--                android:layout_marginStart="50dp"-->
+    <!--                android:layout_marginTop="15dp"-->
+    <!--                android:textSize="20sp">-->
+
+    <!--            </RadioButton>-->
+    <!--        </RadioGroup>-->
+    <EditText
+        android:id="@+id/textArea_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:height="200dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="Type your Reason Here"
+        android:inputType="text|textMultiLine"
+        android:lines="6"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="15dp"
+        android:layout_margin="30dp"
         android:orientation="horizontal">
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:text="Name *"
-            android:textSize="20sp">
-        </TextView>
-        <EditText
-            android:layout_width="260dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="35dp"
-            android:inputType="text"
-            android:enabled="false"
-            android:editable="false"
-            android:layout_marginTop="-15dp">
-
-        </EditText>
-    </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="8dp">
-        <TextView
-            android:layout_width="160dp"
-            android:layout_height="60dp"
-            android:text="Email *"
-            android:textSize="20sp"
-            />
-        <EditText
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="0dp"
-            android:editable="false"
-            android:enabled="false"
-            android:inputType="text"
-            android:layout_marginTop="-15dp">
+        android:orientation="vertical">
 
-        </EditText>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="8dp">
-        <TextView
-            android:layout_width="160dp"
-            android:layout_height="60dp"
-            android:text="Phone Number *"
-            android:textSize="20sp"
-            />
         <EditText
-            android:layout_width="260dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="15dp"
-            android:enabled="false"
-            android:inputType="text"
-            android:layout_marginTop="-15dp">
-
-        </EditText>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="8dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:text="Best Time To call You *"
-            android:layout_marginStart="3dp"
-            android:textSize="20sp"
-            />
-        <RadioGroup
-            android:layout_width="match_parent"
+            android:id="@+id/editText1"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            >
-            <RadioButton
-                android:id="@+id/morningtime"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:text="Morining"
-                android:textSize="20sp">
-            </RadioButton>
-            <RadioButton
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:text="Afternoon"
-                android:layout_marginTop="15dp"
-                android:id="@+id/afternoon"
-                android:textSize="20sp">
-            </RadioButton>
-            <RadioButton
-                android:layout_width="260dp"
-                android:layout_height="wrap_content"
-                android:text="Evening"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="15dp"
-                android:textSize="20sp">
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:hint="Enter Time" />
 
-            </RadioButton>
-        </RadioGroup>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:text="Get Time" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:hint="Enter Date" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="40dp"
+                android:text="Get Date" />
+        </LinearLayout>
+    </LinearLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_gravity="center"
@@ -131,4 +203,3 @@
         </Button>
     </LinearLayout>
 
-</LinearLayout>

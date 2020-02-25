@@ -1,13 +1,15 @@
 package com.example.diabetescare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.diabetescare.Admin.AdminActivity;
 
 public class DCALogin extends AppCompatActivity {
     Button btnSignIn;
@@ -18,9 +20,9 @@ public class DCALogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dcalogin);
         // get the Refferences of views
-        editTextUserName=(EditText)findViewById(R.id.username);
-         editTextPassword=(EditText)findViewById(R.id.password);
-        btnSignIn=(Button)findViewById(R.id.login);
+        editTextUserName = findViewById(R.id.username);
+        editTextPassword = findViewById(R.id.password);
+        btnSignIn = findViewById(R.id.login);
         // create a instance of SQLite Database
         loginDataBaseAdapter=new LoginDataBaseAdapter(this);
         loginDataBaseAdapter=loginDataBaseAdapter.open();
@@ -36,6 +38,10 @@ public class DCALogin extends AppCompatActivity {
                 if(userName.equals("")||password.equals("")){
                     Toast.makeText(DCALogin.this,"Enter Username and Password",Toast.LENGTH_LONG).show();
                     return;
+                }
+                if (userName.equals("Admin") && password.equals("Admin")) {
+                    Intent intent = new Intent(DCALogin.this, AdminActivity.class);
+                    startActivity(intent);
                 }
 // fetch the Password from database for respective user name
                 String storedPassword=loginDataBaseAdapter.getSinlgeEntry(userName);

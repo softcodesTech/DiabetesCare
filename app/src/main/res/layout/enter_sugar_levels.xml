@@ -21,7 +21,7 @@
         android:ems="10"
         android:textAlignment="center"
 
-        android:hint="Enter Sugar Levels"
+        android:hint="Enter Sugar level readings taken from Glucometer"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.206" />
     <Button
-        android:id="@+id/account_creation"
+        android:id="@+id/savereadings"
         android:layout_width="192dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
