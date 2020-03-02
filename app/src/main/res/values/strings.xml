@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DiabetesCare</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="restaurant_locator">Restaurant Locator</string>
 </resources>

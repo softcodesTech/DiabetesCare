@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +15,16 @@
         android:roundIcon="@drawable/diabetesicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EnterSugarLevels"></activity>
+        <activity android:name=".Resturant.DisplayRestaurants"></activity>
+        <activity android:name=".Resturant.FindResturant" />
+        <activity android:name=".HighExercisePlan" />
+        <activity android:name=".NormalExercisePlan" />
+        <activity android:name=".ExercisePlan" />
+        <activity android:name=".LowExercisePlan" />
+        <activity android:name=".NormalDietPlan" />
+        <activity android:name=".HighDietPlan" />
+        <activity android:name=".LowDietPlan" />
+        <activity android:name=".EnterSugarLevels" />
         <activity android:name=".DietPlan" />
         <activity android:name=".Dr" />
         <activity android:name=".DoctorChat" />
@@ -28,7 +39,7 @@
             android:parentActivityName=".MeetDoctor" />
         <activity
             android:name=".MeetDoctor"
-            android:label="Meet Your cardiologist"
+            android:label="Meet Your Diabetologist"
             android:parentActivityName=".FindDoctor" />
         <activity
             android:name=".DoctorAppointmentLetter"

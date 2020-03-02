@@ -1,0 +1,366 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dip"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="For High Diabetic Patient"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fitsSystemWindows="true">
+
+            <TableRow
+                android:id="@+id/table_row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#008000"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/diabetictype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Diabetes Type"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/exercisetype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Exercise Type"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/frequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Frequency(Per Week)"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:background="#ff0000" />
+
+            <TableRow
+                android:id="@+id/carbohydrates_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/aerobic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Diabetic Type2"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/carbosize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Aerobic exercise"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Atleast 3days a week"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/ss_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/ssss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/sss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Walking"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/ss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Every day"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/a_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/aa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Cycling"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/aaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Once"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/b_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/bbb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Swimming"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/bb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="one or more"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/y_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/yyyyy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/yyy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Yoga"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/yy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Every day"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/ssp_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/sps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/spp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Team sports like \nfootbal and basketball"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Twice a week"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/wei_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/wlp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/wl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Weightlifting"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/ww"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Every day"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/ps_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/psss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text=""
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/pss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Pilates"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/ppss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="4 days a week"
+                    android:textColor="#000" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:background="#ff0000" />
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

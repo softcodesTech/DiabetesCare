@@ -21,7 +21,7 @@
         android:ems="10"
         android:textAlignment="center"
 
-        android:hint="Enter Sugar level readings taken from Glucometer"
+        android:hint="Enter Sugar level readings from Glucometer"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

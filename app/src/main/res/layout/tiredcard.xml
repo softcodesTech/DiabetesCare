@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/abc"
+    android:background="#857B7B"
     android:maxWidth="700pt"
-    android:maxHeight="897pt"
-    >
+    android:maxHeight="897pt">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -93,9 +91,9 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/restuarant"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
@@ -112,13 +110,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/restaurant" />
+                        android:src="@drawable/sugarlevels" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Restaurants"
+                        android:text="Meet Doctors"
                         android:textColor="#6f6f6f"
                         android:textSize="18dp" />
 
@@ -126,6 +124,7 @@
 
 
             </androidx.cardview.widget.CardView>
+
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
@@ -197,10 +196,11 @@
 
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:id="@+id/card1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/restuarant"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="12dp"
@@ -217,13 +217,13 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/sugarlevels" />
+                        android:src="@drawable/restaurant" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Meet Doctors"
+                        android:text="Restaurants"
                         android:textColor="#6f6f6f"
                         android:textSize="18dp" />
 
@@ -231,7 +231,6 @@
 
 
             </androidx.cardview.widget.CardView>
-
 
 
 

@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dip"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:fontFamily="serif"
+        android:lineSpacingExtra="4dp"
+        android:text="To keep yourself healthy, keep eating as follow as;"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="For Normal Diet plan"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:id="@+id/table_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#008000"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/foodtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Food Type"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/foodsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Serving Size"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Frequency(Per day)"
+                android:textColor="#000" />
+
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="#ff0000" />
+
+        <TableRow
+            android:id="@+id/carbohydrates_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/carbo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Carbohydrates"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/carbosize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="25%"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/carbofrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="5 times"
+                android:textColor="#000" />
+
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="#ff0000" />
+
+        <TableRow
+            android:id="@+id/veg_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/veg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Vegetables"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/vegsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="50%"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/vegfrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="5 times"
+                android:textColor="#000" />
+
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="#ff0000" />
+
+        <TableRow
+            android:id="@+id/proteins_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/proteins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Proteins"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/proteinsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="25%"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/proteinfrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="5 times"
+                android:textColor="#000" />
+
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="#ff0000" />
+
+        <TableRow
+            android:id="@+id/water_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/water"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Water Intake"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/watersize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="A glass"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/waterfrequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="12 times"
+                android:textColor="#000" />
+
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="#ff0000" />
+    </TableLayout>
+</LinearLayout>

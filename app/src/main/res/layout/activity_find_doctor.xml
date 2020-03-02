@@ -8,7 +8,7 @@
     android:paddingRight="10dp" >
 
     <TextView
-        android:text="Find Your Cardiologist"
+        android:text="Find Your Diabetologist"
         android:textSize="18sp"
         android:textColor="#0a5d00"
         android:textAlignment="center"/>

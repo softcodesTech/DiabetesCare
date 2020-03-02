@@ -16,8 +16,9 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class DietPlan extends AppCompatActivity {
+public class ExercisePlan extends AppCompatActivity {
     EditText nametxt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,16 +48,16 @@ public class DietPlan extends AppCompatActivity {
 
                 nametxt.setText(name + " mg/dL");
                 if (name <= 4) {
-                    Intent lowdiet = new Intent(DietPlan.this, LowDietPlan.class);
+                    Intent lowdiet = new Intent(ExercisePlan.this, LowExercisePlan.class);
                     startActivity(lowdiet);
                     finish();
                 }
                 if (name >= 5 && name <= 7) {
-                    Intent lowdiet = new Intent(DietPlan.this, NormalDietPlan.class);
+                    Intent lowdiet = new Intent(ExercisePlan.this, NormalExercisePlan.class);
                     startActivity(lowdiet);
                     finish();
                 } else {
-                    Intent lowdiet = new Intent(DietPlan.this, HighDietPlan.class);
+                    Intent lowdiet = new Intent(ExercisePlan.this, HighExercisePlan.class);
                     startActivity(lowdiet);
                     finish();
                 }
@@ -67,9 +68,10 @@ public class DietPlan extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Call<List<SugarLevelsPicked>> call, @NonNull Throwable t) {
 
-                Toast.makeText(DietPlan.this, "" + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ExercisePlan.this, "" + t.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });
     }
 }
+
