@@ -28,4 +28,7 @@
     <color name="colourCall">#039233</color>
     <color name="plain_white">#ffffff</color>
     <color name="color_url">#2246e7</color>
+
+    <color name="active">#444444</color>
+    <color name="outdated">#bbbbbb</color>
 </resources>

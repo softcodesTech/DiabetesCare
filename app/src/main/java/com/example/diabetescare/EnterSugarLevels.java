@@ -52,19 +52,6 @@ public class EnterSugarLevels extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onClick(View v) {
-//
-//                int EnterReadings = Integer.parseInt(et.getText().toString());
-//                //String EnterReadings = et.getText().toString();
-//                if (EnterReadings == 0) {
-//                    Toast.makeText(getApplicationContext(), "Please Read the Measurements on the Device and enter them", Toast.LENGTH_LONG).show();
-//
-//                } else {
-//                    // myDb.insertreadings(EnterReadings);
-//                    Toast.makeText(getApplicationContext(), "Saved Successfully ", Toast.LENGTH_LONG).show();
-//                    et.setText("");
-//                    finish();
-//                }
-
                 enteredsugars = et.getText().toString();
                 //validations
                 if (TextUtils.isEmpty(enteredsugars)) {

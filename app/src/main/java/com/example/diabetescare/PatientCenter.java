@@ -22,12 +22,14 @@ public class PatientCenter extends AppCompatActivity  implements View.OnClickLis
         View card3 = findViewById(R.id.dietplan);
         View card4 = findViewById(R.id.exercisplan);
         View card5 = findViewById(R.id.restuarant);
+        View card6 = findViewById(R.id.reminders);
 
         card1.setOnClickListener(this);
         card2.setOnClickListener(this);
         card3.setOnClickListener(this);
         card4.setOnClickListener(this);
         card5.setOnClickListener(this);
+        card6.setOnClickListener(this);
 
 
     }
@@ -57,6 +59,10 @@ public class PatientCenter extends AppCompatActivity  implements View.OnClickLis
             case R.id.restuarant:
                 Intent resturants = new Intent(PatientCenter.this, FindResturant.class);
                 startActivity(resturants);
+
+            case R.id.reminders:
+                Intent rem = new Intent(PatientCenter.this, DashBoardActivity.class);
+                startActivity(rem);
         }
     }
 

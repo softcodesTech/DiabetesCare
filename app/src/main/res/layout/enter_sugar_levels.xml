@@ -5,6 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/glu"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".EnterSugarLevels">
@@ -41,7 +42,6 @@
         android:layout_marginBottom="8dp"
         android:background="@android:color/holo_green_dark"
         android:text="Save"
-        android:onClick="savesugarlevel"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

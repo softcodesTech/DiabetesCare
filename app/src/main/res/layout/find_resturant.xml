@@ -37,7 +37,7 @@
         android:fontFamily="casual"
         android:text="@string/restaurant_locator"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

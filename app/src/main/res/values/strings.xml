@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">DiabetesCare</string>
     <string name="restaurants">Restaurants</string>
-    <string name="restaurant_locator">Restaurant Locator</string>
+    <string name="restaurant_locator">Access diabetes restaurants</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="help">Set a reminder on when you should take your  medication</string>
 </resources>

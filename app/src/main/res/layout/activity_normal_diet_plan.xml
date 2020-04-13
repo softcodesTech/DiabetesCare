@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="Frequency(Per day)"
+                android:text="Frequency"
                 android:textColor="#000" />
 
 
@@ -102,7 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="5 times"
+                android:text=""
                 android:textColor="#000" />
 
 

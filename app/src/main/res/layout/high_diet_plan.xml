@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="Frequency(Per day)"
+                android:text="Frequency"
                 android:textColor="#000" />
 
 
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="35%"
+                android:text="15%"
                 android:textColor="#000" />
 
             <TextView
@@ -112,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="2 times"
+                android:text="daily"
                 android:textColor="#000" />
 
 
@@ -144,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="15%"
+                android:text="50%"
                 android:textColor="#000" />
 
             <TextView
@@ -153,7 +153,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="6 times"
+                android:text="daily"
                 android:textColor="#000" />
 
 
@@ -185,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="50%"
+                android:text="30%"
                 android:textColor="#000" />
 
             <TextView
@@ -194,7 +194,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="5 times"
+                android:text="daily"
                 android:textColor="#000" />
 
 
@@ -226,7 +226,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="A glass"
+                android:text="12 glasses"
                 android:textColor="#000" />
 
             <TextView
@@ -235,7 +235,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:text="12 times"
+                android:text="daily"
                 android:textColor="#000" />
 
 

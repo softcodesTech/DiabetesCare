@@ -15,7 +15,17 @@
         android:roundIcon="@drawable/diabetesicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Resturant.DisplayRestaurants"></activity>
+        <activity android:name=".Admin.Prescriptions"></activity>
+        <activity
+            android:name=".Admin.AddRestaurant"
+            android:label="Add Restaurant"
+            android:parentActivityName=".Admin.AdminActivity"
+            android:theme="@style/AppThemesoftcodes" />
+        <activity
+            android:name=".Admin.YesterdayAppointment"
+            android:label="Yesterday&apos;s Appointments"
+            android:parentActivityName=".Admin.AdminActivity" />
+        <activity android:name=".Resturant.DisplayRestaurants" />
         <activity android:name=".Resturant.FindResturant" />
         <activity android:name=".HighExercisePlan" />
         <activity android:name=".NormalExercisePlan" />
@@ -24,7 +34,10 @@
         <activity android:name=".NormalDietPlan" />
         <activity android:name=".HighDietPlan" />
         <activity android:name=".LowDietPlan" />
-        <activity android:name=".EnterSugarLevels" />
+        <activity
+            android:name=".EnterSugarLevels"
+            android:label="Enter Sugar Levels"
+            android:parentActivityName=".PatientCenter" />
         <activity android:name=".DietPlan" />
         <activity android:name=".Dr" />
         <activity android:name=".DoctorChat" />
@@ -64,6 +77,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".EditActivity" />
+        <activity android:name=".Ringing" />
+        <activity
+            android:name=".DashBoardActivity"
+            android:label="Set A Reminder" />
+
+        <receiver
+            android:name=".TaskReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+        <receiver android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
